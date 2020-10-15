@@ -1,3 +1,5 @@
+using Student_Teacher_CRUD.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace student_teacher_CRUD
+
+namespace Student_Teacher_CRUD
 {
     public class Startup
     {
@@ -24,6 +27,9 @@ namespace student_teacher_CRUD
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddDbContext<StudentTeacherContext>(options =>
+        options.UseMySQL(Configuration.GetConnectionString("StudentTeacherContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

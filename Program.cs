@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace student_teacher_CRUD
+namespace Student_Teacher_CRUD
 {
     public class Program
     {
