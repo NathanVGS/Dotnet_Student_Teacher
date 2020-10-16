@@ -15,7 +15,7 @@ namespace Student_Teacher_CRUD.Models
         //[DataType(DataType.Date)]
         //public DateTime ReleaseDate { get; set; }
 
-        [ForeignKey("Teacher")]
+        [ForeignKey("TeacherID")]
         public Teacher Teacher { get; set; }
 
         //public decimal Price { get; set; }
