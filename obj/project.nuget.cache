@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xg09JPz/BSboem1ZSVyf/EVAl0wDsnKAmjYkkwXy6uA15hgsczlRgWp8vQV0GUHwHRDrZd6sdSV+gM2NNTDk0w==",
+  "dgSpecHash": "qJwGeMbGYz1qvI5DpagtJxKB9aNQ4GiRju5kjPlrxJpwg8WEx3CM1Vt6DxdoTFJqQY4jAAkp0ldAFgJ4kajADQ==",
   "success": true,
-  "projectFilePath": "/home/user/Documents/Dotnettests/student_teacher_CRUD/student_teacher_CRUD.csproj",
+  "projectFilePath": "/home/user/Documents/Dotnettests/Dotnet_Student_Teacher/student_teacher_CRUD.csproj",
   "expectedPackageFiles": [
     "/home/user/.nuget/packages/bouncycastle.netcore/1.8.3/bouncycastle.netcore.1.8.3.nupkg.sha512",
     "/home/user/.nuget/packages/google.protobuf/3.6.1/google.protobuf.3.6.1.nupkg.sha512",
@@ -179,9 +179,7 @@
     "/home/user/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/home/user/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "/home/user/.nuget/packages/system.xml.xpath/4.0.1/system.xml.xpath.4.0.1.nupkg.sha512",
-    "/home/user/.nuget/packages/system.xml.xpath.xmldocument/4.0.1/system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
-    "/home/user/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.3/microsoft.aspnetcore.app.ref.3.1.3.nupkg.sha512",
-    "/home/user/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.5/microsoft.netcore.app.host.linux-x64.3.1.5.nupkg.sha512"
+    "/home/user/.nuget/packages/system.xml.xpath.xmldocument/4.0.1/system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
   ],
   "logs": []
 }
