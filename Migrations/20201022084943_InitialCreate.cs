@@ -32,23 +32,23 @@ namespace student_teacher_CRUD.Migrations
                     Last_Name = table.Column<string>(nullable: true),
                     First_Name = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
-                    TeacherID = table.Column<int>(nullable: true)
+                    TeacherId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Student", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Student_Teacher_TeacherID",
-                        column: x => x.TeacherID,
+                        name: "FK_Student_Teacher_TeacherId",
+                        column: x => x.TeacherId,
                         principalTable: "Teacher",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Student_TeacherID",
+                name: "IX_Student_TeacherId",
                 table: "Student",
-                column: "TeacherID");
+                column: "TeacherId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

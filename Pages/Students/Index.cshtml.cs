@@ -24,6 +24,8 @@ namespace student_teacher_CRUD.Pages.Students
         public async Task OnGetAsync()
         {
             Student = await _context.Student.ToListAsync();
+            //add teachers?
+            
         }
     }
 }

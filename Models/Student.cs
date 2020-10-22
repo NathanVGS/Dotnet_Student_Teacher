@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc;
+using Student_Teacher_CRUD.Data;
 
 
 namespace Student_Teacher_CRUD.Models
@@ -12,12 +14,10 @@ namespace Student_Teacher_CRUD.Models
         public string First_Name { get; set; }
         public string Email { get; set; }
 
-        //[DataType(DataType.Date)]
-        //public DateTime ReleaseDate { get; set; }
-
-        [ForeignKey("TeacherID")]
+        //[BindProperty]
+        [Required]
+        [ForeignKey("TeacherId")]
+        public int TeacherId { get; set; }
         public Teacher Teacher { get; set; }
-
-        //public decimal Price { get; set; }
     }
 }
